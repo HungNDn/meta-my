@@ -1,0 +1,21 @@
+From abcdef1234567890 Mon Sep 17 00:00:00 2001
+From: HungNghiem <nghiemhungts6896@gmail.com>
+Date: 27/07/2025
+Subject: [PATCH] Rename output binary to hwpatch
+
+Upstream-Status: Inappropriate [configuration change for Yocto only]
+
+---
+diff --git a/Makefile b/Makefile
+index cdac1b1..45f842e 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@ CC      ?= gcc
+ CFLAGS  ?= -Wall -O2
+ LDFLAGS ?=
+ 
+-TARGET  = hwrepo
++TARGET  = hwpatch
+ SRC     = hwrepo.c
+ 
+ all: $(TARGET)
